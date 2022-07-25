@@ -9,33 +9,145 @@
   <link rel="stylesheet" href="./style.css">
   <link href="https://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/lato" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
 
 <body>
-  <div id="slide_menu">
-    <div>
-      <ul class="items">
-        <li><a class="menu__topics" href="#projects">Portfolio</a></li>
-        <li><a class="menu__topics" href="#about-me">About</a></li>
-        <li><a class="menu__topics" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-    <div><a href="#" class="cls">&times;</a></div>
-  </div>
-  <header>
-    <div class="header__links">
-      <a class="logo" href="#"><img src="./icons/logo.png" alt="header icon"></a>
-    </div>
+  <a class="menu" href="#"><img src="./icons/menu.png" alt="hamburger menu"></a>
+  <header class="slide-menu">
+    <span class="upper-menu">
+      <span class="upper-menu__icons">
+        <a href="#" class="bi bi-facebook"></a>
+        <a href="#" class="bi bi-twitter"></a>
+      </span>
+      <span class="upper-menu__links">
+        <a href="#">English</a>
+        <a href="#">My Page</a>
+        <a href="#">Logout</a>
+      </span>
+    </span>
+    <span class="header__links">
+      <a class="logo" href="#"><img src="./images/logo-rock.jpg" alt="header icon"></a>
+    </span>
     <nav>
-      <a class="menu" href="#"><img src="./icons/hamburger.png" alt="hamburger menu"></a>
       <ul class="menu__list">
-        <li class="menu__list-item"><a href="#projects">Portfolio</a></li>
-        <li class="menu__list-item"><a href="#about-me">About</a></li>
-        <li class="menu__list-item"><a href="#contact">Contact</a></li>
+        <li class="menu__item"><a href="#projects">About</a></li>
+        <li class="menu__item"><a href="#about-me">Program</a></li>
+        <li class="menu__item"><a href="#contact">Join</a></li>
+        <li class="menu__item"><a href="#projects">Sponsor</a></li>
+        <li class="menu__item"><a href="#projects">News</a></li>
+        <li class="menu__item"><a href="#projects">CC Campaign</a></li>
       </ul>
     </nav>
   </header>
   <main>
+    <section class="cover">
+      <h3>"Welcome music lovers"</h3>
+      <h1>The concert of the century. <br>The most spectacular meeting of pop and rock in 2022.</h1>
+      <p>A happy meeting with your favorite bands that will leave an unforgettable memory, all thanks to the great scenery accompanied by a perfect sound that will reverberate throughout Colombia, only at the Arena Plaza in Bogota in October.</p>
+      <h2>2022.10.20(THU)</h2>
+      <small>Bogotá, Cota, Cundinamarca</small>
+    </section>
+    <section class="program">
+      <h3>Main Program</h3>
+      <ul class="event-fase">
+        <li>
+          <img src="./icons/ceremonia-de-apertura.png" alt="">
+          <span>Lecture</span>
+          <p>Inauguration of the event with the general director of the festival.</p>
+        </li>
+        <li>
+          <img src="./icons/ceremonia-de-apertura.png" alt="">
+          <span>Lecture</span>
+          <p>Inauguration of the event with the general director of the festival.</p>
+        </li>
+        <li>
+          <img src="./icons/ceremonia-de-apertura.png" alt="">
+          <span>Lecture</span>
+          <p>Inauguration of the event with the general director of the festival.</p>
+        </li>
+        <li>
+          <img src="./icons/ceremonia-de-apertura.png" alt="">
+          <span>Lecture</span>
+          <p>Inauguration of the event with the general director of the festival.</p>
+        </li>
+        <li>
+          <img src="./icons/ceremonia-de-apertura.png" alt="">
+          <span>Lecture</span>
+          <p>Inauguration of the event with the general director of the festival.</p>
+        </li>
+      </ul>
+      <a class="btn" href="#">Join to Concert of the Century</a>
+    </section>
+    <section class="bands">
+      <h3>Featured Bands</h3>
+      <ul>
+        <li class="bands__item">
+          <img src="./images/guns-and-roses.jpg" alt="Guns and Roses">
+          <div>
+            <h4>Guns and Roses</h4>
+            <h5>Stars: Axl Rose and Slash</h5>
+            <h6>Founded in 1985, it has sold 50 million records.</h6>
+          </div>
+        </li>
+        <li class="bands__item">
+          <img src="./images/metallica.jpg" alt="Metallica">
+          <div>
+            <h4>Metallica</h4>
+            <h5>Stars: Kirk Hammett and Lars Ulrich</h5>
+            <h6>Founded in 1981, it has sold 120 million records.</h6>
+          </div>
+        </li>
+        <li class="bands__item">
+          <img src="./images/aerosmith.jpg" alt="">
+          <div>
+            <h4>Aerosmith</h4>
+            <h5>Stars: Steven Tyler and Joe Perry</h5>
+            <h6>Founded in 1970, it has sold 67 million records.</h6>
+          </div>
+        </li>
+        <li class="bands__item">
+          <img src="./images/red-hot-chilli-pepers.jpg" alt="Red Hot Chilli Peppers">
+          <div>
+            <h4>Red Hot Chilli Peppers</h4>
+            <h5>Stars: Anthony Kiedis and Flea</h5>
+            <h6>Founded in 1983, it has sold 85 million records.</h6>
+          </div>
+        </li>
+        <li class="bands__item">
+          <img src="./images/marron5-1.jpg" alt="">
+          <div>
+            <h4>Maroon 5</h4>
+            <h5>Stars: Adam Levine and James Valentine</h5>
+            <h6>Founded in 2001, it has sold 78 million records.</h6>
+          </div>
+        </li>
+        <li class="bands__item">
+          <img src="./images/band-6.jpg" alt="">
+          <div>
+            <h4>Iron Maiden</h4>
+            <h5>Stars: Steve Harris Bruce Dickinson</h5>
+            <h6>Founded in 1975, it has sold 105 million records.</h6>
+          </div>
+        </li>
+        <li class="bands__item">
+          <img src="./images/bon-jovi.jpg" alt="">
+          <div>
+            <h4>Bon Jovi</h4>
+            <h5>Stars: Jon Bon Jovi and David Bryan</h5>
+            <h6>Founded in 1983, it has sold 130 million records.</h6>
+          </div>
+        </li>
+        <li class="bands__item">
+          <img src="./images/band-8.jpg" alt="">
+          <div>
+            <h4>Radiohead</h4>
+            <h5>Stars: Thom Yorke and Jonny Greenwood</h5>
+            <h6>Founded in 1985, it has sold 40 million records.</h6>
+          </div>
+        </li>
+      </ul>
+    </section>
   </main>
   <script src="./main.js"></script>
 </body>
