@@ -158,6 +158,59 @@ h6 {
   margin-bottom: 1rem;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+  padding: 1rem;
+  color: var(--sans-font);
+}
+
+footer h3 {
+  font-family: var(--serif-font);
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--nutral-darker);
+  margin-bottom: 1rem;
+}
+
+.first-list,
+.second-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.third-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.last-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+}
+
+.last-section li p {
+  font-family: var(--serif-font);
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
 @media screen and (min-width: 768px) {
   header {
     display: flex;
