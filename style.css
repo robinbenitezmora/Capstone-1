@@ -7,7 +7,6 @@
 }
 
 :root {
-  --sans-font: "Kanit", "sans-serif";
   --serif-font: "Lato", "serif";
   --primary: #272a31;
   --secondary: #ec5242;
@@ -49,7 +48,7 @@
   width: 100%;
   position: absolute;
   top: 0;
-  left: -90rem;
+  left: -200rem;
   background: var(--secondary);
   transition: all 1000ms linear;
   padding-top: 6rem;
@@ -221,10 +220,18 @@ footer h3 {
   color: var(--sans-font);
 }
 
+.program h3 {
+  font-family: var(--serif-font);
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
 .event-fase {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  margin: 2rem 0;
 }
 
 .event-fase li {
@@ -241,7 +248,7 @@ footer h3 {
 
 .event-fase img {
   width: 20%;
-  height: auto;
+  height: 100%;
   border-radius: 20%;
 }
 
@@ -274,6 +281,10 @@ footer h3 {
   margin: 2rem 0;
 }
 
+.btn-program {
+  display: none;
+}
+
 .bands {
   display: flex;
   flex-direction: column;
@@ -289,8 +300,6 @@ footer h3 {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  min-width: 100%;
-  max-width: 35rem;
   margin-bottom: 1rem;
 }
 
@@ -315,20 +324,10 @@ footer h3 {
   padding: 0 1rem;
 }
 
-.first-list,
-.second-list {
+.sponsors {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  gap: 0.5rem;
-}
-
-.third-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   gap: 0.5rem;
@@ -337,7 +336,7 @@ footer h3 {
 .last-section {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 2rem;
   padding: 3rem 1rem;
@@ -353,12 +352,21 @@ footer h3 {
 @media screen and (min-width: 768px) {
   header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 6rem;
-    padding: 1rem 12rem;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 1rem 10rem;
   }
 
   .upper-menu {
@@ -409,12 +417,12 @@ footer h3 {
     font-size: 1rem;
   }
 
-  .menu {
+  .hamburger-menu {
     display: none;
   }
 
   .logo {
-    display: none;
+    display: flex;
   }
 
   .menu__list {
@@ -422,8 +430,12 @@ footer h3 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 40rem;
+    width: 45rem;
     height: auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    font-family: var(--serif-font);
   }
 
   .menu__list-item {
@@ -435,5 +447,96 @@ footer h3 {
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.7rem;
+  }
+
+  .cover {
+    padding: 7rem 9rem;
+  }
+
+  .cover h3 {
+    font-size: 2rem;
+  }
+
+  .cover p {
+    width: 90%;
+  }
+
+  .program h3 {
+    font-size: 1.5rem;
+    height: 3rem;
+    margin-top: 1rem;
+  }
+
+  .event-fase {
+    flex-direction: row;
+    padding: 2rem 5rem;
+    margin: 0;
+  }
+
+  .event-fase li {
+    flex-direction: column;
+    width: 20%;
+    height: auto;
+  }
+
+  .event-fase img,
+  .event-fase li span {
+    width: auto;
+    height: 20%;
+    font-size: 1.5rem;
+    justify-self: center;
+  }
+
+  .event-fase li p {
+    width: 80%;
+    height: 60%;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .btn-program {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    font-size: 1.5rem;
+    font-family: var(--serif-font);
+    font-weight: 700;
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  .bands {
+    height: 45rem;
+    background-color: var(--d3d3d3);
+    color: var(--sans-font);
+    overflow: auto;
+  }
+
+  .bands h3 {
+    text-align: center;
+    width: 100%;
+    height: 6rem;
+  }
+
+  .bands ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: 30rem;
+    gap: 0.5rem;
+  }
+
+  .sponsors {
+    width: 70%;
+    height: 10rem;
   }
 }
