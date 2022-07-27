@@ -38,7 +38,7 @@
   display: none;
 }
 
-#slide_menu {
+.slide_menu {
   display: flex;
   flex-direction: row;
   backdrop-filter: blur(5px);
@@ -59,6 +59,13 @@
 #slide_menu.active {
   left: 0;
   pointer-events: auto;
+  z-index: 1000;
+}
+
+#main-page.active {
+  left: 0;
+  pointer-events: auto;
+  z-index: 1000;
 }
 
 .cls {
@@ -261,6 +268,16 @@ footer h3 {
   color: var(--secondary-dark);
 }
 
+.about p {
+  font-family: var(--serif-font);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: normal;
+  color: var(--primary);
+  text-align: center;
+  padding: 0.75rem;
+}
+
 .event-fase li p {
   width: 50%;
   height: auto;
@@ -361,6 +378,13 @@ footer h3 {
   left: -200rem;
 }
 
+#about.active {
+  left: 0;
+  pointer-events: auto;
+  background-color: #fff;
+  z-index: 1;
+}
+
 .about h3 {
   font-family: var(--serif-font);
   font-size: 1.4rem;
@@ -368,16 +392,6 @@ footer h3 {
   color: var(--secondary);
   text-align: center;
   margin: 2rem 0;
-}
-
-.about p {
-  font-family: var(--serif-font);
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: normal;
-  color: var(--primary);
-  text-align: center;
-  padding: 0.75rem;
 }
 
 .about__title {
@@ -417,12 +431,18 @@ footer h3 {
   border: 1px solid var(--nutral);
 }
 
-.about img {
+.concert-image {
   width: 100%;
   height: auto;
   padding: 1rem 0;
   backdrop-filter: blur(5px);
   mix-blend-mode: multiply;
+}
+
+.hamburger-menu__about {
+  position: relative;
+  top: 0;
+  left: -9rem;
 }
 
 small {
