@@ -51,7 +51,7 @@
   left: -200rem;
   background: var(--secondary);
   transition: all 1000ms linear;
-  padding-top: 6rem;
+  padding-top: 4rem;
   padding-left: 2rem;
   mix-blend-mode: multiply;
 }
@@ -347,6 +347,100 @@ footer h3 {
   font-size: 0.75rem;
   font-weight: bold;
   color: var(--primary);
+}
+
+/* About Section */
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem 3rem 1rem;
+  position: absolute;
+  top: 0;
+  left: -200rem;
+}
+
+.about h3 {
+  font-family: var(--serif-font);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--secondary);
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.about p {
+  font-family: var(--serif-font);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: normal;
+  color: var(--primary);
+  text-align: center;
+  padding: 0.75rem;
+}
+
+.about__title {
+  text-align: center;
+  font-family: 'Cocogoose', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.about-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1.5rem;
+}
+
+.about-information__title {
+  text-align: center;
+  font-family: var(--serif-font);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-top: 1.5rem;
+  padding: 0 1rem;
+}
+
+.about-information__logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 3rem;
+  margin: 2rem 0;
+  border: 1px solid var(--nutral);
+}
+
+.about img {
+  width: 100%;
+  height: auto;
+  padding: 1rem 0;
+  backdrop-filter: blur(5px);
+  mix-blend-mode: multiply;
+}
+
+small {
+  text-align: center;
+  width: 70%;
+  height: auto;
+  padding: 1rem;
+  font-family: var(--serif-font);
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.mail {
+  font-family: var(--serif-font);
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 768px) {
