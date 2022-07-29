@@ -20,7 +20,7 @@ const openSlideMenuAbout = document.querySelector('.hamburger-menu__about');
 const returnMainPage = document.querySelector('.logo__slide-menu');
 
 openAbout.addEventListener('click', () => {
-  document.getElementById('main-page').classList.remove('active');
+  document.getElementById('main-page').classList.add('hidden');
   document.getElementById('about').classList.add('active');
 });
 
@@ -29,10 +29,23 @@ openSlideMenuAbout.addEventListener('click', () => {
 });
 
 returnMainPage.addEventListener('click', () => {
+  document.getElementById('main-page').classList.remove('hidden');
   document.getElementById('about').classList.remove('active');
 });
+// Cambio
+const MainPageLinksInNav = document.querySelectorAll('.logo');
+
+MainPageLinksInNav.forEach((element) => {
+  element.addEventListener('click', () => {
+    document.getElementById('main-page').classList.remove('hidden');
+    document.getElementById('about').classList.remove('active');
+  });
+});
+
+
 
 // Open Capstone Desktop
+
 const openAboutDesktop = document.querySelector('.menu__item');
 const closeAboutDesktop = document.querySelector('.logo');
 
