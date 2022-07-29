@@ -14,11 +14,11 @@
 
 ## Live Demo
 
-[Live Demo Link](https://rskinnerc.github.io/capstone-project-1/)
+[Live Demo Link](https://robinbenitezmora.github.io/Capstone-1/)
 
 ## Project Introduction
 
-[Presentation Loom Video](https://www.loom.com/share/eee8ee2a34a04f3f84726993bec85dc0)
+[Presentation Loom Video](https://www.loom.com/share/7f6b853f49344f55806364fe9555e196)
 
 ## Getting Started
 
@@ -46,7 +46,7 @@ In order to visualize the project consider using a [live server for development 
 
 - GitHub: https://github.com/robinbenitezmora
 
-- GitHub Pages Deployed: https://robinbenitezmora.github.io/Portfolio-Robin-Benitez/
+- GitHub Pages Deployed: https://robinbenitezmora.github.io/Capstone-1/
 
 - LinkedIn: https://www.linkedin.com/in/robin-benitez-mora-manizales/
 
