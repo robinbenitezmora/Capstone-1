@@ -62,12 +62,6 @@
   z-index: 1000;
 }
 
-#main-page.active {
-  left: 0;
-  pointer-events: auto;
-  z-index: 1000;
-}
-
 .cls {
   position: absolute;
   top: 4rem;
@@ -132,8 +126,12 @@ h1 {
   font-family: 'Cocogoose', sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--secondary);
   margin-bottom: 1rem;
+  background: linear-gradient(to right, #f11904, #a60000, #f6551b, #ef3204);
+  background-clip: text; /* stylelint-disable-line */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 h2 {
@@ -169,7 +167,7 @@ h6 {
   font-family: var(--serif-font);
   font-size: 0.75rem;
   color: var(--primary);
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 footer {
@@ -177,6 +175,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   background-color: var(--primary);
   padding: 1rem;
   color: var(--sans-font);
@@ -195,16 +194,24 @@ footer h3 {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 1rem 1rem 3rem 1rem;
+  background-image: url(./images/home_bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding: 1rem 1rem 2rem;
 }
 
 .cover h3 {
   font-family: var(--serif-font);
   font-size: 1.4rem;
   font-weight: 600;
-  color: var(--secondary);
   text-align: start;
   margin: 2rem 0;
+  background: linear-gradient(to right, #f11904, #a60000, #f6551b, #ef3204);
+  background-clip: text; /* stylelint-disable-line */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .cover p {
@@ -223,6 +230,7 @@ footer h3 {
   justify-content: center;
   align-items: center;
   background-color: var(--primary);
+  background-image: url(./images/pattern_bg.png);
   padding: 1rem;
   color: var(--sans-font);
 }
@@ -305,40 +313,49 @@ footer h3 {
 .bands {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--d3d3d3);
-  color: var(--sans-font);
-  padding: 1rem;
 }
 
-.bands__item {
+#featured {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  font-size: 2rem;
+  font-family: var(--serif-font);
+  margin-top: 1rem;
+}
+
+.bands h3 {
+  text-align: center;
+  padding: 2rem 0;
 }
 
 .bands ul {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, auto);
+  gap: 0 0.5rem;
+}
+
+.bands__item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
 .bands ul img {
-  width: 32%;
-  height: auto;
+  display: flex;
+  justify-self: center;
 }
 
 .bands ul div {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 68%;
-  padding: 0 1rem;
 }
 
 .sponsors {
@@ -372,6 +389,10 @@ footer h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url(./images/about_us_bg.png);
+  background-color: #d3d3d3;
+  background-position: top;
+  background-repeat: no-repeat;
   padding: 1rem 1rem 3rem 1rem;
   position: absolute;
   top: 0;
@@ -431,12 +452,43 @@ footer h3 {
   border: 1px solid var(--nutral);
 }
 
-.concert-image {
+.concerts {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 100%;
+}
+
+.concert1 {
+  text-align: center;
   width: 100%;
-  height: auto;
-  padding: 1rem 0;
-  backdrop-filter: blur(5px);
-  mix-blend-mode: multiply;
+  height: 10rem;
+  font-size: 1.5rem;
+  font-family: var(--serif-font);
+  color: #fff;
+  background-image: url('./images/concert1.jpg');
+  background-repeat: no-repeat;
+  background-color: rgba(235, 14, 14, 0.4);
+  background-blend-mode: soft-light;
+  background-position: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  margin: 2rem 0;
+}
+
+.concert2 {
+  text-align: center;
+  width: 100%;
+  height: 10rem;
+  font-size: 1.5rem;
+  font-family: var(--serif-font);
+  color: #fff;
+  background-image: url('./images/concert3.jpg');
+  background-repeat: no-repeat;
+  background-color: rgba(235, 14, 14, 0.4);
+  background-blend-mode: soft-light;
+  background-position: center;
+  padding: 3rem 2rem;
 }
 
 .hamburger-menu__about {
@@ -470,7 +522,15 @@ small {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 6rem;
+    height: 8rem;
+    background-color: #fff;
+  }
+
+  .header__about {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .links {
@@ -564,7 +624,7 @@ small {
   }
 
   h1 {
-    font-size: 2.7rem;
+    font-size: 3rem;
   }
 
   .cover {
@@ -579,12 +639,18 @@ small {
     width: 90%;
   }
 
+  .mark {
+    color: var(--secondary-dark);
+    border: solid 6px var(--secondary);
+    padding: 1rem;
+  }
+
   .program h3 {
     font-size: 1.5rem;
     height: 3rem;
     margin-top: 1rem;
   }
-
+  
   .event-fase {
     flex-direction: row;
     padding: 2rem 5rem;
@@ -628,29 +694,74 @@ small {
     text-decoration: underline;
   }
 
+  #featured {
+    height: 8rem;
+    font-size: 2.5rem;
+  }
+
   .bands {
-    height: 45rem;
-    background-color: var(--d3d3d3);
-    color: var(--sans-font);
-    overflow: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 0 3rem;
+    gap: 1rem;
   }
 
-  .bands h3 {
-    text-align: center;
-    width: 100%;
-    height: 6rem;
+  .bands__item {
+    padding: 0 3rem;
   }
-
-  .bands ul {
-    display: flex;
-    flex-wrap: wrap;
-    width: auto;
-    height: 30rem;
-    gap: 0.5rem;
-  }
-
+  
   .sponsors {
-    width: 70%;
+    width: 100%;
     height: 10rem;
+  }
+
+  .about {
+    padding: 14rem 0;
+    gap: 4rem;
+  }
+
+  .about h3 {
+    font-size: 2.5rem;
+  }
+  
+  .about__title {
+    text-align: center;
+    font-family: 'Cocogoose', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+  }
+
+  .about-general {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15rem;
+  }
+
+  .hamburger-menu__about {
+    display: none;
+  }
+
+  .concerts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .concert1,
+  .concert2 {
+    width: 50%;
+    height: 24rem;
+    font-size: 2.5rem;
+    padding: 14rem 2rem 0;
+  }
+
+  small {
+    width: 100%;
   }
 }
