@@ -658,7 +658,7 @@ small {
     height: 3rem;
     margin-top: 1rem;
   }
-  
+
   .event-fase {
     flex-direction: row;
     padding: 2rem 5rem;
@@ -718,7 +718,19 @@ small {
   .bands__item {
     padding: 0 3rem;
   }
-  
+
+  .concerts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  small {
+    width: 100%;
+  }
+
   .sponsors {
     width: 100%;
     height: 10rem;
@@ -727,19 +739,6 @@ small {
   .about {
     padding: 14rem 0 10rem 0;
     gap: 4rem;
-  }
-
-  .about h3 {
-    font-size: 2.5rem;
-  }
-  
-  .about__title {
-    text-align: center;
-    font-family: 'Cocogoose', sans-serif;
-    font-size: 3rem;
-    font-weight: 600;
-    color: var(--secondary);
-    margin-bottom: 1rem;
   }
 
   .about-general {
@@ -753,14 +752,15 @@ small {
     display: none;
   }
 
-  .concerts {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
+  .about__title {
+    text-align: center;
+    font-family: 'Cocogoose', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--secondary);
+    margin-bottom: 1rem;
   }
-  
+
   .concert1,
   .concert2 {
     width: 50%;
@@ -769,7 +769,7 @@ small {
     padding: 14rem 2rem 0;
   }
 
-  small {
-    width: 100%;
+  .about h3 {
+    font-size: 2.5rem;
   }
 }

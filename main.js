@@ -42,10 +42,7 @@ MainPageLinksInNav.forEach((element) => {
   });
 });
 
-
-
 // Open Capstone Desktop
-
 const openAboutDesktop = document.querySelector('.menu__item');
 const closeAboutDesktop = document.querySelector('.logo');
 
@@ -55,8 +52,7 @@ openAboutDesktop.addEventListener('click', () => {
 
 closeAboutDesktop.addEventListener('click', () => {
   document.getElementById('about').classList.remove('active');
-})
-
+});
 
 // Dynamic Creation of Bands
 const BANDS = [
@@ -113,20 +109,20 @@ const BANDS = [
 const cards = document.getElementById('bands');
 
 function createCards() {
-  BANDS.forEach( (data) => {
+  BANDS.forEach((data) => {
     cards.innerHTML += `
     <ul>
       <li class='bands__item'>
-        <img src='${ data.img }' alt='${ data.name }'>
+        <img src='${data.img}' alt='${data.name}'>
         <div>
-          <h4>${ data.name }</h4>
-          <h5>Stars: ${ data.stars }</h5>
-          <h6>${ data.description }</h6>
+          <h4>${data.name}</h4>
+          <h5>Stars: ${data.stars}</h5>
+          <h6>${data.description}</h6>
         </div>
       </li>
     </ul>
 `;
-  })
+  });
 }
 
 createCards();
