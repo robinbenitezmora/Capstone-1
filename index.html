@@ -5,38 +5,120 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Robin</title>
+  <title>Rock Concert</title>
   <link rel="stylesheet" href="./style.css">
   <link href="https://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/lato" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
 
 <body>
-  <div id="slide_menu">
+  <div class="slide_menu" id="slide_menu">
     <div>
       <ul class="items">
-        <li><a class="menu__topics" href="#projects">Portfolio</a></li>
-        <li><a class="menu__topics" href="#about-me">About</a></li>
-        <li><a class="menu__topics" href="#contact">Contact</a></li>
+        <li><a class="logo__slide-menu" href="#"><img src="./images/logo-rock2.jpg" alt="header icon"></a></li>
+        <li><a class="menu__topics" href="./about.html">About</a></li>
+        <li><a class="menu__topics" href="#">Program</a></li>
+        <li><a class="menu__topics" href="#">Join</a></li>
+        <li><a class="menu__topics" href="#">Sponsor</a></li>
+        <li><a class="menu__topics" href="#">News</a></li>
+        <li><a class="menu__topics" href="#">Contact</a></li>
       </ul>
     </div>
     <div><a href="#" class="cls">&times;</a></div>
   </div>
-  <header>
-    <div class="header__links">
-      <a class="logo" href="#"><img src="./icons/logo.png" alt="header icon"></a>
-    </div>
-    <nav>
-      <a class="menu" href="#"><img src="./icons/hamburger.png" alt="hamburger menu"></a>
-      <ul class="menu__list">
-        <li class="menu__list-item"><a href="#projects">Portfolio</a></li>
-        <li class="menu__list-item"><a href="#about-me">About</a></li>
-        <li class="menu__list-item"><a href="#contact">Contact</a></li>
+  <section id="main-page">
+    <a class="hamburger-menu" href="#"><img src="./icons/menu.png" alt="hamburger menu"></a>
+    <header>
+      <span class="upper-menu">
+        <span class="upper-menu__icons">
+          <a href="#" class="bi bi-facebook"></a>
+          <a href="#" class="bi bi-twitter"></a>
+        </span>
+        <span class="upper-menu__links">
+          <a href="#">English</a>
+          <a href="#">My Page</a>
+          <a href="#">Logout</a>
+        </span>
+      </span>
+      <div class="links">
+        <a class="logo" href="#"><img src="./images/logo-rock2.jpg" alt="header icon"></a>
+        <nav>
+          <ul class="menu__list">
+            <li class="menu__item menu__about"><a href="./about.html">About</a></li>
+            <li class="menu__item"><a href="#">Program</a></li>
+            <li class="menu__item"><a href="#">Join</a></li>
+            <li class="menu__item"><a href="#">Sponsor</a></li>
+            <li class="menu__item"><a href="#">News</a></li>
+            <li class="menu__item mark"><a href="#">Century Concert</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+      <section class="cover" id="cover">
+        <h3>"Welcome music lovers"</h3>
+        <h1 class="cocogoose">THE CONCERT OF THE CENTURY <br>THE MOST SPECTACULAR MEETING OF POP AND ROCK IN 2022</h1>
+        <p>A happy meeting with your favorite bands that will leave an unforgettable memory with a perfect sound that will reverberate throughout Colombia, only at the Arena Plaza in Bogota in October.</p>
+        <h2>2022.10.21(FRI) - 22(SAT)</h2>
+        <h4>Bogotá, Cota, Cundinamarca</h4>
+      </section>
+      <section class="program">
+        <h3>Main Program</h3>
+        <ul class="event-fase">
+          <li>
+            <img src="./icons/ceremonia-de-apertura.png" alt="">
+            <h5>Opening</h5>
+            <p>Inauguration of the event with the general director of the festival.</p>
+          </li>
+          <li>
+            <img src="./icons/ceremonia-de-apertura.png" alt="">
+            <h5>Musical History</h5>
+            <p>Here you will find the main milestones in the musical journey of our guest bands.</p>
+          </li>
+          <li>
+            <img src="./icons/ceremonia-de-apertura.png" alt="">
+            <h5>Store</h5>
+            <p>Only on this site can you buy souvenirs and musical products from your favorite band.</p>
+          </li>
+          <li>
+            <img src="./icons/ceremonia-de-apertura.png" alt="">
+            <h5>Main Event</h5>
+            <p>You can listen to all the bands Friday and Saturday from 4 pm and we will finish at 11 pm.</p>
+          </li>
+          <li>
+            <img src="./icons/ceremonia-de-apertura.png" alt="">
+            <h5>Closure</h5>
+            <p>Each of the bands in a special place will be autographing your favorite memories.</p>
+          </li>
+        </ul>
+        <a class="btn" href="#">Join to Concert of the Century</a>
+        <a class="btn-program" href="#main-page">SEE THE WHOLE PROGRAM</a>
+      </section>
+      <section class="container__bands">;
+        <div id="featured">Featured Bands</div>
+        <section class="bands" id="bands" >
+        </section>
+        <div class="btn-bands"><button id="btn-card">More<i class="bi bi-chevron-down"></i> </button></div>
+      </section>
+      <footer>
+        <h3>Partner</h3>
+        <ul class="sponsors">
+          <li><a href="#"><img src="./images/mozilla-logo.png" alt=""></a></li>
+          <li><a href="#"><img src="./images/google-logo.svg" alt=""></a></li>
+          <li><a href="#"><img src="./images/naver-logo.png" alt=""></a></li>
+          <li><a href="#"><img src="./images/daumkakao-logo.png" alt=""></a></li>
+          <li><img src="./images/airbnb-logo.svg" alt=""></li>
+        </ul>
+      </footer>
+      <ul class="last-section">
+        <li>s
+          <img src="./images/logo-rock2.jpg" alt="">
+        </li>
+        <li>
+          <p>All content on this website, unless otherwise specified, is available under a Creative Commons Atrribution<br>Copyright © 2022. <br>All rights reserved.</p>
+        </li>
       </ul>
-    </nav>
-  </header>
-  <main>
-  </main>
+  </section>
   <script src="./main.js"></script>
 </body>
 
