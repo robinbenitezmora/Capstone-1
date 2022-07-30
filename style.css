@@ -547,6 +547,35 @@ small {
   text-decoration: underline;
 }
 
+.btn-bands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+#btn-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  font-size: 1.5rem;
+  font-family: var(--serif-font);
+  font-weight: 700;
+  padding: 1rem 5rem;
+  margin: 1rem;
+  background-color: #fff;
+  color: #272a31;
+  border: 2px solid var(--nutral);
+  border-radius: 3px;
+}
+
+#btn-card i {
+  font-size: 1.5rem;
+  color: var(--secondary);
+  margin-left: 1rem;
+}
+
 @media screen and (min-width: 768px) {
   header {
     display: flex;
@@ -747,6 +776,8 @@ small {
   .bands__item {
     padding: 0 3rem;
   }
+
+ a
 
   .event-fase li:hover {
     border: 0.4rem #fff solid;

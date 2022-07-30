@@ -2,7 +2,7 @@ const openSlideMenu = document.querySelector('.hamburger-menu');
 const closeSlideMenu = document.querySelector('.cls');
 const closeNav = document.querySelector('.items');
 
-openSlideMenu.addEventListener('click', () => {
+openSlideMenu?.addEventListener('click', () => {
   document.getElementById('slide_menu').classList.add('active');
 });
 
@@ -24,7 +24,7 @@ openAbout.addEventListener('click', () => {
   document.getElementById('about').classList.add('active');
 });
 
-openSlideMenuAbout.addEventListener('click', () => {
+openSlideMenuAbout?.addEventListener('click', () => {
   document.getElementById('slide_menu').classList.add('active');
 });
 
