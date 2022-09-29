@@ -1,8 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 # Capstone 1
 
-> After of 4 weeks studying in the Microverse program, is time to apply the acquire knowledge. This is the first capstone project, where I built a mobile and desktop website for a spectacular rock concert event by means of CSS, HTML, and JavaScript.
-
+> As the first Microverse capstone project, I created a mobile and Desktop website to get a promotional announcement of the best Rock concert in Colombia. In this project, I applied my earned skills in the first module: CSS, HTML, and JavaScript.
 ## Built With
 
 - HTML
